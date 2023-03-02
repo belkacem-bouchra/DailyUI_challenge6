@@ -1,0 +1,156 @@
+@media (max-width:1199px) {
+    .search {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+
+    .search input {
+        display: none;
+    }
+
+    ::placeholder {
+        opacity: 0;
+    }
+}
+
+@media (max-width:930px) {
+
+    .commun-btn:hover {
+        background-color: var(--main-color);
+    }
+
+    li.work:hover {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .dropdown ul li a:hover,
+    .sign-out a:hover {
+        color: #8f8f8f;
+
+    }
+
+    .banner-content:hover .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .banner-content:hover .text {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .bars {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    nav,
+    .main-menu {
+        gap: 10px;
+    }
+
+    .main-list {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 5%;
+        background: white;
+        padding: 20px;
+        transition: 0.3s ease;
+    }
+
+    .main-list li i,
+    .main-list li a {
+        color: black;
+    }
+
+    .show-list {
+        transform: translateX(0);
+    }
+
+    .hide-list {
+        transform: translateX(-140%);
+    }
+
+    .content {
+        margin-bottom: 20px;
+    }
+
+    .content .card .social i:hover {
+        background-color: #ffffff;
+    }
+
+    .content .portfolio .menu ul li:hover a {
+        font-weight: 400;
+    }
+
+    footer {
+        height: fit-content;
+        position: static;
+        padding: 20px 0;
+    }
+
+    footer .container {
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer .container ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer ul li a:hover {
+        color: #777;
+    }
+
+    footer .logo {
+        order: -1;
+        position: relative;
+        display: flex;
+    }
+}
+
+@media (max-width:620px) {
+    .content .container {
+        flex-direction: column;
+    }
+
+    .card,
+    .portfolio {
+        width: 100%;
+    }
+
+    .portfolio-item {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .social,
+    .about {
+        text-align: center;
+    }
+}
+
+@media (max-width:400px) {
+    li.work {
+        display: none;
+    }
+
+    .stats ul {
+        gap: 15px !important;
+    }
+
+    .stats ul li {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats ul li span {
+        display: flex;
+        order: -1;
+    }
+}
