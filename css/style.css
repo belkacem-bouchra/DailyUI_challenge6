@@ -295,6 +295,7 @@ li.work {
     background-color: white;
     padding: 6px 15px;
     border-radius: 50px;
+    text-align:center;
     transition: var(--commun-transition);
 }
 
